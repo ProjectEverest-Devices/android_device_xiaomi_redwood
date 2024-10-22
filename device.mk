@@ -11,10 +11,6 @@ $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=redwood_global
 	
-# Fingerprint
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
-
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.rc
